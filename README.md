@@ -1,8 +1,8 @@
 # greykey_password_extractor
- To extract passwords from a greykey log file, and present it in a way for Cellebrite to import
-
- Run this script in the same folder as the document you want to strip the passwords out of.
-
- Run entirely from the command line: "python greykey_passwords.py [name of greykey password file]
-
- This will strip everything apart from the password written after "item value: "
+ 
+1) This script extract passwords from the text document created when conducting a greykey extraction.
+2) These text files often are named as such: [8 numbers]-[15 numbers][passwords].txt. 
+3) Place this script in the same directory as that password text document. 
+4) Run this script in a command line. The only argument should be the name of the text document. 
+5) This script will use regex to remove all unrequired text from the document, and place each password on a new line. 
+6) The output text document will keep the original filename, with "Extracted passwords from - " prefixed, so you know where the results are from. 
