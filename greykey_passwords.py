@@ -14,7 +14,7 @@ def read_from_file():
 
 
 def write_to_file(pw):
-    # Writes data to new file. Appends prefix "CLEANED - " to filename.
+    """Writes data to a file with the same file name as the original, but with "extracted passwords from - " prefixed"""
     with open("Extracted passwords from - " + sys.argv[1], "w") as f:
         for x in pw:
             f.write(x + "\n")
